@@ -73,13 +73,12 @@ Images after preprocessing and augmentation:
 | **Nod5 (Crop 5-Class)**  | Malignancy Score 1–5 (nodule)   | 0.55           |
 | **Full5 (Slice 5-Class)**| Malignancy Score 1–5 (slice)    | 0.41           |
 
-![Fig. 2: Binary Classification ROC & PR Curves](figures/fig2_binary_performance.png)
-
 ---
 
 ## Interpretability
 
-- **Test-Time Augmentation (TTA)** provided a marginal boost (~+0.02 W-AUPRC) across models.  
+- **Test-Time Augmentation (TTA)** provided a marginal boost (~+0.02 W-AUPRC) across models.
+  ![Grad-CAM++ on Nod2](images/nod5cam.jpg)  
 - **Grad-CAM++** heatmaps confirm focus on clinically relevant regions:
 
   - Nodule 5-class classifier  
