@@ -82,10 +82,10 @@ Images after preprocessing and augmentation:
 - **Test-Time Augmentation (TTA)** provided a marginal boost (~+0.02 W-AUPRC) across models.  
 - **Grad-CAM++** heatmaps confirm focus on clinically relevant regions:
 
-  - Nodule binary classifier  
-    ![Grad-CAM++ on Nod2](figures/fig16_gradcam_nod2.png)  
-  - Full-slice binary classifier  
-    ![Grad-CAM++ on Full2](figures/fig18_gradcam_full2.png)  
+  - Nodule 5-class classifier  
+    ![Grad-CAM++ on Nod2](images/nod5cam.png)  
+  - Full-slice 5-class classifier  
+    ![Grad-CAM++ on Full2](images/full5cam.png)  
 
 ---
 
