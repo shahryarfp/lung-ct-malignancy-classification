@@ -68,12 +68,12 @@ Images after preprocessing and augmentation:
 
 ## Results
 
-| Model                    | Task                            | Weighted AUPRC | Balanced Accuracy |
+| Model                    | Task                            | Weighted AUPRC | Accuracy          |
 |--------------------------|---------------------------------|---------------:|------------------:|
-| **Nod2 (Crop Binary)**   | Benign vs. Malignant (nodule)   | **0.88**       | 0.76            |
-| **Full2 (Slice Binary)** | Benign vs. Malignant (slice)    | **0.81**       | 0.68            |
-| **Nod5 (Crop 5-Class)**  | Malignancy Score 1–5 (nodule)   | 0.55           | 0.49            |
-| **Full5 (Slice 5-Class)**| Malignancy Score 1–5 (slice)    | 0.41           | 0.29            |
+| **Nod2 (Crop Binary)**   | Benign vs. Malignant (nodule)   | **0.88**       | 0.82            |
+| **Full2 (Slice Binary)** | Benign vs. Malignant (slice)    | **0.81**       | 0.78            |
+| **Nod5 (Crop 5-Class)**  | Malignancy Score 1–5 (nodule)   | 0.55           | 0.57            |
+| **Full5 (Slice 5-Class)**| Malignancy Score 1–5 (slice)    | 0.41           | 0.43            |
 
 ---
 
