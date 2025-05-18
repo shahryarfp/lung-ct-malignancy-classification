@@ -83,9 +83,9 @@ Images after preprocessing and augmentation:
 - **Grad-CAM++** heatmaps confirm focus on clinically relevant regions:
 
   - Nodule 5-class classifier  
-    ![Grad-CAM++ on Nod2](images/nod5cam.png)  
+    ![Grad-CAM++ on Nod2](images/nod5cam.jpg)  
   - Full-slice 5-class classifier  
-    ![Grad-CAM++ on Full2](images/full5cam.png)  
+    ![Grad-CAM++ on Full2](images/full5cam.jpg)  
 
 ---
 
