@@ -41,6 +41,7 @@ Our pipeline uses pretrained CNN backbones (ConvNeXt-Tiny selected via screening
    - **Padding & Resizing**: zero-pad nodule crops to square → 224×224 bilinear resize.  
    - **Z-Score Normalization** per image (zero mean, unit variance).
 
+Images after preprocessing and augmentation:
 ![Fig. 1: Example Preprocessing](images/augmentations.png)
 
 ---
