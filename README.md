@@ -2,7 +2,7 @@
 
 **Team M2S**  
 Mehrshad Alipoor, Shahryar Namdari Ghareghani, Maurizio Tirabassi  
-May 14, 2025
+May, 2025
 
 ---
 
