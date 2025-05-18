@@ -35,3 +35,82 @@ Our pipeline uses pretrained CNN backbones (ConvNeXt-Tiny selected via screening
 
 ## Repository Structure
 
+
+---
+
+## Data & Preprocessing
+
+1. **Dataset**  
+   - 2 363 full slices and corresponding nodule crops, each labeled 1–5.  
+   - Severe class imbalance: score 3 dominates; score 5 is rare.
+
+2. **Preprocessing Pipeline**  
+   - **HU Clipping** to [–1000, 400] to focus on lung parenchyma.  
+   - **Padding & Resizing**: zero-pad nodule crops to square → 224×224 bilinear resize.  
+   - **Z-Score Normalization** per image (zero mean, unit variance).
+
+![Fig. 1: Example Preprocessing](figures/fig1_preprocessing.png)
+
+---
+
+## Modeling Approach
+
+1. **Backbone Screening**  
+   - Evaluated ConvNeXt-Tiny, DenseNet121, EfficientNetB4, MobileNetV2.  
+   - **ConvNeXt-Tiny** achieved highest balanced-accuracy AUC on both tasks.
+
+2. **Class Imbalance Mitigation**  
+   - Offline upsampling of minority classes via rotations (±15°), flips, zoom/crop, MixUp, CutMix.  
+   - GAN-based synthesis attempted but discarded (poor sample quality).
+
+3. **Hyperparameter Search**  
+   - **Batch Size**: 16 for full slices, 32 for nodules.  
+   - **Optimizer**: Adam for full; AdamW for nodules.  
+   - **Classifier Head**: two-layer (256→128→n_classes) for full; single layer for nodules.  
+   - **Fine-Tuning Regime**: Moderate unfreezing (50→90%) for full; Conservative (30→70%) for nodules.
+
+---
+
+## Results
+
+| Model                 | Task                             | Weighted AUPRC |
+|-----------------------|----------------------------------|---------------:|
+| **Nod2 (Crop Binary)**   | Benign vs. Malignant (nodule)   | **0.88**       |
+| **Full2 (Slice Binary)** | Benign vs. Malignant (slice)    | **0.81**       |
+| **Nod5 (Crop 5-Class)**  | Malignancy Score 1–5 (nodule)   | 0.55           |
+| **Full5 (Slice 5-Class)**| Malignancy Score 1–5 (slice)    | 0.41           |
+
+![Fig. 2: Binary Classification ROC & PR Curves](figures/fig2_binary_performance.png)
+
+---
+
+## Interpretability
+
+- **Test-Time Augmentation (TTA)** provided a marginal boost (~+0.02 W-AUPRC) across models.  
+- **Grad-CAM++** heatmaps confirm focus on clinically relevant regions:
+
+  - Nodule binary classifier  
+    ![Grad-CAM++ on Nod2](figures/fig16_gradcam_nod2.png)  
+  - Full-slice binary classifier  
+    ![Grad-CAM++ on Full2](figures/fig18_gradcam_full2.png)  
+
+---
+
+## Discussion & Future Work
+
+- **Limitations**  
+  - Small, imbalanced dataset.  
+  - No k-fold cross-validation or full-dataset retraining.  
+- **Next Steps**  
+  - Incorporate cross-validation to reduce variance.  
+  - Explore larger augmentation hyperparameter grid.  
+  - Retrain on combined train+val for final deployment.
+
+---
+
+## Usage
+
+1. **Install dependencies**  
+   ```bash
+   pip install -r requirements.txt
+
