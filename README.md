@@ -35,7 +35,7 @@ Our pipeline uses pretrained CNN backbones (ConvNeXt-Tiny selected via screening
 1. **Dataset**  
    - 2 363 full slices and corresponding nodule crops, each labeled 1–5.  
    - Severe class imbalance: score 3 dominates; score 5 is rare.
-   - You can find all preprocessed data and traned models here: https://www.kaggle.com/datasets/shahryarnamdari/ai-in-biomed-dataset-lung
+   - You can find all preprocessed data and trained models here:  [here]([https://openai.com](https://www.kaggle.com/datasets/shahryarnamdari/ai-in-biomed-dataset-lung))
 
 2. **Preprocessing Pipeline**  
    - **HU Clipping** to [–1000, 400] to focus on lung parenchyma.  
