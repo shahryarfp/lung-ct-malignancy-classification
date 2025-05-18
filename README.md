@@ -9,14 +9,11 @@ May 14, 2025
 ## Table of Contents
 
 1. [Overview](#overview)  
-2. [Repository Structure](#repository-structure)  
-3. [Data & Preprocessing](#data--preprocessing)  
-4. [Modeling Approach](#modeling-approach)  
-5. [Results](#results)  
-6. [Interpretability](#interpretability)  
-7. [Discussion & Future Work](#discussion--future-work)  
-8. [Usage](#usage)  
-9. [License](#license)  
+2. [Data & Preprocessing](#data--preprocessing)  
+3. [Modeling Approach](#modeling-approach)  
+4. [Results](#results)  
+5. [Interpretability](#interpretability)  
+6. [Discussion & Future Work](#discussion--future-work)  
 
 ---
 
