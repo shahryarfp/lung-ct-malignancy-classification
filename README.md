@@ -33,11 +33,6 @@ Our pipeline uses pretrained CNN backbones (ConvNeXt-Tiny selected via screening
 
 ---
 
-## Repository Structure
-
-
----
-
 ## Data & Preprocessing
 
 1. **Dataset**  
@@ -105,12 +100,4 @@ Our pipeline uses pretrained CNN backbones (ConvNeXt-Tiny selected via screening
   - Incorporate cross-validation to reduce variance.  
   - Explore larger augmentation hyperparameter grid.  
   - Retrain on combined train+val for final deployment.
-
----
-
-## Usage
-
-1. **Install dependencies**  
-   ```bash
-   pip install -r requirements.txt
 
