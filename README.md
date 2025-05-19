@@ -33,7 +33,7 @@ Our pipeline uses pretrained CNN backbones (ConvNeXt-Tiny selected via screening
 ## Data & Preprocessing
 
 1. **Dataset**  
-   - 2 363 full slices and corresponding nodule crops, each labeled 1–5.  
+   - 2363 full slices and corresponding nodule crops, each labeled 1–5.  
    - Severe class imbalance:
      ![Fig. 1: Example Preprocessing](images/class_distribution.png)
    - You can find all preprocessed data and trained models [here](https://www.kaggle.com/datasets/shahryarnamdari/ai-in-biomed-dataset-lung)
