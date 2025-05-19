@@ -79,7 +79,7 @@ Images after preprocessing and augmentation:
 
 ## Interpretability
 
-- **Test-Time Augmentation (TTA)** provided a marginal boost (~+0.02 W-AUPRC) across models.
+- **Test-Time Augmentation (TTA)** provided a marginal boost across models.
   ![Grad-CAM++ on Nod2](images/tta.jpg)  
 - **Grad-CAM++** heatmaps confirm focus on clinically relevant regions:
 
