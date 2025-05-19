@@ -1,4 +1,4 @@
-# Applied AI in Biomedicine: Lung Nodule Malignancy Classification
+# Applied AI in Biomedicine: Lung Malignancy Classification
 
 **Team M2S**  
 Mehrshad Alipoor, Shahryar Namdari Ghareghani, Maurizio Tirabassi  
