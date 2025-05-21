@@ -102,7 +102,7 @@ Images after preprocessing and augmentation:
   - Retrain on combined train+val for final deployment.
 
 ## Acknowledgments
-This project was developed as part of the course Applied AI in Biomedicine by:
+This project was developed as part of the course Applied AI in Biomedicine at the Polytechnic University of Milan by:
 - Maurizio Tirabassi
 - [Mehrshad Alipoor](https://github.com/MehrshadAlipoor)
 - And Me :)
