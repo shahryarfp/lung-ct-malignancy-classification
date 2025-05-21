@@ -100,3 +100,10 @@ Images after preprocessing and augmentation:
   - Explore larger augmentation hyperparameter grid.  
   - Retrain on combined train+val for final deployment.
 
+## Acknowledgments
+This project was developed as part of the course Biomedical Signal Processing Laboratory (POLIMI 2024-2025) by:
+- Jazmín Azul Fermani
+- [Federico Sangineto Cotrina](https://github.com/Fede411)
+- And Me :)
+
+For more details, refer to the full [Report](./Report.pdf).
