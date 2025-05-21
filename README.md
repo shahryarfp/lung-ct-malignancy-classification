@@ -13,7 +13,8 @@ May, 2025
 3. [Modeling Approach](#modeling-approach)  
 4. [Results](#results)  
 5. [Interpretability](#interpretability)  
-6. [Discussion & Future Work](#discussion--future-work)  
+6. [Discussion & Future Work](#discussion--future-work)
+7. [Acknowledgments](#acknowledgments)  
 
 ---
 
