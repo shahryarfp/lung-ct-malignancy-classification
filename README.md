@@ -103,7 +103,7 @@ Images after preprocessing and augmentation:
 ## Acknowledgments
 This project was developed as part of the course Applied AI in Biomedicine by:
 - Maurizio Tirabassi
-- [Mehrshad Alipoor]([https://github.com/Fede411](https://github.com/MehrshadAlipoor))
+- [Mehrshad Alipoor]([https://github.com/MehrshadAlipoor])
 - And Me :)
 
 For more details, refer to the full [Report](./report.pdf).
